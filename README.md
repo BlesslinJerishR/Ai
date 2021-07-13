@@ -54,6 +54,10 @@ Alien Invasion Shooter Game - PyCrash
 >>
 >>Sound Modules
 >>
+>>BGM
+>>
+>>Bullet Sounds
+>>
 >>Damage effects
 
 >To +
