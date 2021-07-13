@@ -15,8 +15,8 @@ class Scoreboard:
         self.stats = ai.stats
 
         # Font settings for storing infos
-        self.text_color = (0, 215, 165)
-        self.font = pygame.font.SysFont("Ariel", 48)
+        self.text_color = (172,231,0)
+        self.font = pygame.font.SysFont(None, 40)
 
         # Prep initial score image
         self.prep_score()
@@ -60,8 +60,9 @@ class Scoreboard:
 
         # Center
         self.high_score_rect = self.high_score_image.get_rect()
-        self.high_score_rect.centerx += 159
-        self.high_score_rect.top = self.score_rect.top
+        self.high_score_rect.centery += 130
+        self.high_score_rect.centerx += 32
+        # self.high_score_rect.top = self.score_rect.top
 
     def check_high_score(self):
         """Check to see if there is a new high"""

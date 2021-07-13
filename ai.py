@@ -7,7 +7,7 @@ from alien import Alien
 from bullet import Bullet
 from time import sleep
 from ai_stats import GameStats
-from button import Button, DButton
+from button import Button, Sign, DButton
 from ai_scoreboard import Scoreboard
 
 
@@ -35,6 +35,7 @@ class AlienInvasion:
         self._create_fleet()
         # Make the play button
         self.play_button = Button(self, "Play")
+        self.sign = Sign(self, "Developer : Mastermindx33")
         # Difficulty button
         # self.difficulty_button = DButton(self, "Levels")
         # Sounds
@@ -119,6 +120,7 @@ class AlienInvasion:
         # Draw the play button if the game is inactive
         if not self.stats.game:
             self.play_button.draw_button()
+            self.sign.draw_button()
         # if not self.stats.game:
         #     self.difficulty_button.draw_button()
         pygame.display.flip()
