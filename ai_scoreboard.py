@@ -15,8 +15,8 @@ class Scoreboard:
         self.stats = ai.stats
 
         # Font settings for storing infos
-        self.text_color = (0, 255, 0)
-        self.font = pygame.font.SysFont(None, 48)
+        self.text_color = (0, 215, 165)
+        self.font = pygame.font.SysFont("Ariel", 48)
 
         # Prep initial score image
         self.prep_score()
@@ -53,7 +53,6 @@ class Scoreboard:
 
 
     def prep_high_score(self):
-        # BUG
         """Turn the high score into rendered image"""
         high_score = round(self.stats.high_score, -1)
         high_score_str = "{:,}".format(high_score)
@@ -61,7 +60,7 @@ class Scoreboard:
 
         # Center
         self.high_score_rect = self.high_score_image.get_rect()
-        self.high_score_rect.centerx = self.screen_rect.centerx
+        self.high_score_rect.centerx += 159
         self.high_score_rect.top = self.score_rect.top
 
     def check_high_score(self):
