@@ -67,3 +67,5 @@ Alien Invasion Shooter Game - PyCrash
 >>Home Screen
 >>
 >>Dev Banner
+
+##### Developer : Mastermindx33
